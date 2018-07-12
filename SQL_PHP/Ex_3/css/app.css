@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: sans-serif;
+    font-size: 10px;
+}
+
+body {
+    color: #222;
+    margin: 0 auto;
+    width: 96rem;
+}
+
+p,
+ul {
+    font: 400 1.6rem/2.4rem sans-serif;
+    margin-bottom: 2.4rem;
+}
+
+header {
+    height: 9.6rem;
+}
+
+header h1 {
+    font: 700 4.8rem/9.6rem serif;
+    float: left;
+    margin: 0;
+}
+
+header h1 a {
+    color: #222;
+    text-decoration: none;
+}
+
+header h1 span {
+    color: #6aacae;
+    font-weight: 400;
+}
+
+nav > ul {
+    list-style: none;
+    margin: 0;
+    text-align: right
+}
+
+nav li {
+    display: inline-block;
+    height: 9.6rem;
+    line-height: 9.6rem;
+}
+
+nav li a {
+    color: #222;
+    transition: color .3s linear;
+}
+
+nav li a:hover,
+nav li a.active {
+    color: #6aacae;
+}
+
+main h1 {
+    font: 700 4.8rem/7.2rem sans-serif;
+}
+main h1 small {
+    color: #666666;
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+
+.category > span {
+    background: #666666;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: .6rem;
+}
+
+.col-left {
+    float: left;
+    width: 72rem;
+}
+
+.col-right {
+    float: right;
+    padding: 1.2rem;
+    width: 24rem;
+}
+
+.alert {
+    background: #931f1a;
+    color: #fff;
+    padding: 1.2rem;
+}
+.alert-danger {
+    background: #931f1a;
+}
+.alert-success {
+    background: #409321;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    font-size: 1.6rem;
+    padding: 1.2rem;
+}
+
+form {
+    width: 48rem;
+}
+
+label {
+    display: block;
+    width: 100%;
+}
+
+label > span {
+    display: inline-block;
+    padding-right: 2.4rem;
+    padding-top: .6rem;
+    text-align: right;
+    vertical-align: top;
+    width: 33.3333%;
+}
+
+label + small {
+    color: #666;
+    display: block;
+    font-size: 1.3rem;
+    font-style: italic;
+    text-align: right;
+}
+
+input,
+textarea {
+    background: #dedede;
+    border: 0;
+    border-bottom: 2px solid #222222;
+    font-family: monospace;
+    padding: .6rem;
+    width: 66.6667%;
+}
+
+.error > input,
+.error > textarea {
+    border-bottom-color: #931f1a;
+}
+
+.action {
+    text-align: right;
+}
+
+button {
+    background: #409321;
+    border: 0;
+    color: #fff;
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.view {
+    background: #409321;
+    border-radius: 2px;
+    color: #ffffff;
+    padding: .6rem;
+    text-decoration: none;
+}
+
+.clearfix::after {
+    clear: both;
+    content: '';
+    display: table;
+}
